@@ -1,55 +1,21 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+# Custom Select Component Implementation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project demonstrates the implementation of a **reusable React select component** built using **React**, **TypeScript**, and **Vite**. The component is highly customizable and supports multiple selection modes, a search feature, and more. It's designed to be used in a variety of forms, providing a great user experience with flexibility and functionality.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Customizable Options:** Accepts a list of options as a prop (e.g., `[{label: ‘option 1’, value: 1}, {label: ‘option 2’, value: 2}]`).
+- **Single & Multiple Selection:** Supports both single and multiple selection modes based on the provided prop.
+- **Checkboxes for Multiple Selection:** When in multiple selection mode, each option is represented with checkboxes.
+- **Placeholder Text:** Displays a customizable placeholder when no items are selected.
+- **Select/Deselect All:** In multiple selection mode, includes an option to select or deselect all options at once.
+- **Search Functionality:** Implements a search option that allows filtering options by text.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-    languageOptions: {
-        // other options...
-        parserOptions: {
-            project: ['./tsconfig.node.json', './tsconfig.app.json'],
-            tsconfigRootDir: import.meta.dirname,
-        },
-    },
-})
+## Setup & Installation
+```bash
+git clone https://github.com/MaxBoyar/customSelect.git
+npm install
+npm run dev
 ```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-    // Set the react version
-    settings: { react: { version: '18.3' } },
-    plugins: {
-        // Add the react plugin
-        react,
-    },
-    rules: {
-        // other rules...
-        // Enable its recommended rules
-        ...react.configs.recommended.rules,
-        ...react.configs['jsx-runtime'].rules,
-    },
-})
-```
-=======
-# customSelect
-custom select
->>>>>>> 7f4782bd282aaa254937103d9cfca59e91195992
