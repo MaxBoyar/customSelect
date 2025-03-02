@@ -19,3 +19,8 @@ git clone https://github.com/MaxBoyar/customSelect.git
 npm install
 npm run dev
 ```
+
+## Run tests
+```bash
+npx vitest
+```
